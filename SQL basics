@@ -1,0 +1,40 @@
+SQL - structured query language used to manipulate DBs
+
+Common cmds
+SELECT - Extracts data from DB
+UPDATE - updates data in DB
+INSERT INTO - inserts new data into database
+DELETE - deletes data from DB
+
+CREATE DATABASE	- creates a new DB
+DROP DATABASE - deletes a DB
+
+CREATE TABLE - creates a new table
+DROP TABLE - deletes a table
+ALTER TABLE - modifies a table
+--------------------------------
+eg) CREATE DATABASE database_name;
+* Connect to the created DB using -> /c database_name
+
+eg) CREATE TABLE table_name (ID int,Name text,Dept text);
+\d+ table_name -> table structure will be shown
+
+To  add data into the table we need to use INSERT command
+eg) INSERT INTO table_name (ID,Name,Dept) values (1,Prejwel,Engineering);
+
+* SELECT COMMAND - used to Query the table
+eg) SELECT * from table_name ;
+eg2) SELECT ID, NAME from table_name;
+
+* Update cmd
+eg) UPDATE table_name set Name = ‘Harindran’ where ID =1;
+
+* Alter -> add more columns to the table which is already created
+eg) alter table table_name add email text; -> will add email column to the existing table
+Now add data using UPDATE cmd
+eg) UPDATE table_name set email = ‘pj@gmail.com’ where ID =1;
+
+DROP - removes the table
+* DROP TABLE table_name ;
+* \d -> to check if there is any table
+To connect back to postgres -> \c postgres
