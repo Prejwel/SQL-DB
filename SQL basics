@@ -33,8 +33,14 @@ eg) UPDATE table_name set Name = ‘Harindran’ where ID =1;
 eg) alter table table_name add email text; -> will add email column to the existing table
 Now add data using UPDATE cmd
 eg) UPDATE table_name set email = ‘pj@gmail.com’ where ID =1;
+----
+Tip
+UPDATE - SET
+ALTER - ADD
 
-
+CREATE TABLE table_name
+ALTER TABLE table_name
+-----
 DROP - removes the table
 * DROP TABLE table_name ;
 * \d -> to check if there is any table
