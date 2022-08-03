@@ -50,3 +50,12 @@ PRIMARY KEY - no null values, caandidate key using which we can uniquely identif
 FOREIGN KEY - refrence of primary key in one table into another table. 
 ex) T1 have primary key RollNo
 if the same RollNo column is used in another table it becomes a foreign key.
+--------
+Questions 
+Delete -> to delete a row in table.
+Truncate - to delete all the rows , no roll back of data.
+TABLE - collection of data in an organised manner in the form of rows and columns.
+FIELD - no: of columns in the table. 
+JOIN - to combine rows from 2 or more tables based on a releated column between them. Used to  merge tables and retrive data.
+Char vs VARCHAR - char is used for strings of fixed length. varchar is used for strings of Variable length.
+
