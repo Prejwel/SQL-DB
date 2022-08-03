@@ -34,7 +34,13 @@ eg) alter table table_name add email text; -> will add email column to the exist
 Now add data using UPDATE cmd
 eg) UPDATE table_name set email = ‘pj@gmail.com’ where ID =1;
 
+
 DROP - removes the table
 * DROP TABLE table_name ;
 * \d -> to check if there is any table
 To connect back to postgres -> \c postgres
+-------
+PRIMARY KEY - no null values, caandidate key using which we can uniquely identift the values.
+FOREIGN KEY - refrence of primary key in one table into another table. 
+ex) T1 have primary key RollNo
+if the same RollNo column is used in another table it becomes a foreign key.
